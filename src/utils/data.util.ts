@@ -8,7 +8,7 @@ export const formatDate = (pubDate: string) => {
 	day: 'numeric'
 };
 
-  return new Date(pubDate).toLocaleDateString('en-US', options);
+  return new Date(pubDate).toLocaleDateString('ru-RU', options);
 }
 
 export const sortPostsByDate = (a: MarkdownInstance<any>, b: MarkdownInstance<any>) => {

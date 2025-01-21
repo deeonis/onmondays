@@ -1,163 +1,68 @@
 ---
 layout: ../../layouts/post.astro
-title: "This is the second post of my new Astro blog."
-pubDate: 2023-12-24
+title: "Сколько нужно зарабатывать чтобы чувствовать себя счастливым?"
+pubDate: 2020-10-05
 description: "This is the second post of my new Astro blog."
 author: "nicdun"
-excerpt: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-image:
-  src:
+excerpt: До последнего времени в мире не было качественных исследований про то, как деньги коррелируют с человеческим счастьем. Вчера на фейсбуке мне попалось одно из самых интересных — исследование оперирует данными о сотнях тысячах человек из 150 стран. И если вы пока не знаете какая сумма денег сделает вас по-настоящему счастливыми — устраивайтесь поудобнее.
+image: 
+  src: ../public/showcase.jpg
   alt:
-tags: ["tag5", "tag1", "tag2", "tag3", "tag4"]
+tags: ["Мысли"]
 ---
+До 2000-х в мире почти не было качественных исследований про то, как деньги коррелируют с человеческим счастьем. Недавно мне попалось [одно из самых интересных](https://www.nber.org/papers/w14282) — исследование оперирует данными о сотнях тысячах людей из 150 стран. И если вы пока не знаете какая сумма денег сделает вас по-настоящему счастливыми — устраивайтесь поудобнее. 
 
-This is a paragraph. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero esse non molestias eos excepturi, inventore atque cupiditate. Sed voluptatem quas omnis culpa, et odit.
+## Удовлетворенность жизнью растет вместе с состоянием
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero esse non molestias eos excepturi, inventore atque cupiditate. Sed voluptatem quas omnis culpa, et odit.
+Это мы и так знали. Но чем богаче вы становитесь, тем больше дополнительных денег вам нужно, чтобы повышать уровень удовлетворенности.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero esse non molestias eos excepturi, inventore atque cupiditate. Sed voluptatem quas omnis culpa, et odit.
+Если вы зарабатываете 50 тысяч рублей в месяц, и вдруг неожиданно получаете дополнительные 10 — наверняка вы потратите их на что-то важное: заплатите за квартиру, внесете в счёт кредита, купите какую-то вещь, которую давно хотели.
 
-## Headings
+В моменте эти неожиданные 10 тысяч рублей вполне серьезно повлияют на вашу удовлетворенность и уровень счастья, ведь они сделали вашу жизнь чуть проще.
 
-# H1 For example
+Но вот если бы вы стабильно зарабатывали, например, 500 тысяч рублей в месяц — те же самые 10 тысяч вряд ли смогли бы сильно повлиять на что-то. Скорее всего, вы бы потратили их на какую-нибудь дребедень — сходили бы в кино с друзьями или пообедали бы пару раз в каком-нибудь крутом кафе. Другими словами, влияние той же суммы на вас в этом случае было бы гораздо меньше.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero esse non molestias eos excepturi, inventore atque cupiditate. Sed voluptatem quas omnis culpa, et odit.
+В виде графика эта мысль может выглядеть как-то так
 
-## H2 For example
+![](public/happines_income_chart.png)
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero esse non molestias eos excepturi, inventore atque cupiditate. Sed voluptatem quas omnis culpa, et odit.
+В начале горизонтальной оси, линия зависимости довольно быстро идет вверх — уровень счастья растёт, а человек начинает удовлетворять не только базовые, но и другие первостепенные потребности. Но после того, как все они удовлетворены, линия становится все больше похожа на прямую.
 
-### H3 For example
+Чем больше у вас денег, тем медленнее растет уровень счастья. Основной вопрос — как быстро наступает предел, после которого зависимость слабеет.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero esse non molestias eos excepturi, inventore atque cupiditate. Sed voluptatem quas omnis culpa, et odit.
+Чтобы найти ответ на этот вопрос, исследование опирается на данные опроса тысяч людей из более чем 150 стран. Вне зависимости от страны, люди с большим доходом все так же более счастливы. Но сумма, после которой линия выпрямляется, зависит в первую очередь от экономических показателей государства.
 
-#### H4 For example
+На графике тоже отчетлива видна зависимость между доходом (горизонтальная ось) и удовлетворением от жизни. Линии на графике выглядят как прямые потому, что каждый инкремент на оси абсцисс соответствует удвоению дохода.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero esse non molestias eos excepturi, inventore atque cupiditate. Sed voluptatem quas omnis culpa, et odit.
+Грубо говоря, каждое удвоение вашего текущего дохода, прибавляет к уровню удовлетворенности от жизни 0.5 по шкале от 1 до 10. Немного, правда ли?
 
-##### H5 For example
+Если вы получаете, например, 100 тысяч рублей, и думаете, что удвоение вашего заработка, 200 тысяч, значительно повысит удовлетворение от собственной жизни — теперь понятно, что вы, скорее всего, ошибаетесь.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero esse non molestias eos excepturi, inventore atque cupiditate. Sed voluptatem quas omnis culpa, et odit.
+Для сравнения, люди с годовым доходом в $2000 оценивали свое удовлетворение от жизни в 4.2 из 10. Тогда как те, кто получает в 32 раза больше — $64 000 — в 7.2 из 10.
 
-###### H6 For example
+## Правда ли, что богатые люди более счастливы?
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero esse non molestias eos excepturi, inventore atque cupiditate. Sed voluptatem quas omnis culpa, et odit.
 
-## Emphasis
+Чтобы ответить на этот вопрос, Даниел Канеман (получил нобелевскую премию по экономике в 2002) решил вместо абстрактных вопросов вида «как проходит ваша жизнь?» спрашивать людей о более понятных и приземленных вещах — «как вы чувствовали себя вчера?», «как вы чувствуете себя сейчас?».
 
-Emphasis, aka italics, with _asterisks_ or _underscores_.
+Его группа исследователей организовала телефонный опрос сотен американцев в следующих терминах (внимание на график)
 
-Strong emphasis, aka bold, with **asterisks** or **underscores**.
+Positive affect — «были ли вы счастливы вчера?»
+Low stress — «чувствовали ли вы стресс вчера?»
+Not blue — «чувствовали ли вы грусть вчера?»
+Ladder — «насколько вы удовлетворены своей жизнью в целом?».
 
-Strikethrough uses two tildes. ~~Scratch this.~~
+График показывает нам, что удовлетворение жизнью все так же прирастает при каждом удвоении дохода. В то время как остальные три линии прерывают активный рост в районе $50000 и превращаются в совсем прямые в районе $75000.
 
-## Blockquotes
+Это значит, что доход > $50 000 в год не имеет почти никакого влияния на то, как счастливы, подвержены стрессу или печальны люди.
 
-> Blockquotes are very handy in email to emulate reply text.
-> This line is part of the same quote.
+## Что в итоге
 
-Quote break.
 
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can _put_ **Markdown** into a blockquote.
+Конечно, все эти цифры не стоит в точности проецировать на себя. Как минимум потому, что в исследовании используется слово «household», что с натяжкой можно считать индивидуальным доходом.
 
-## Horizontal separator
+Исследование не может учесть всё разнообразие ситуаций, которые могут быть в жизни каждого — наличие иждивенцев, проживание в месте (или обществе), где наличие большого дохода — musthave для занятия какого-то стабильного положения. Кроме этого, чтобы рассуждать в каких-то конкретных числах, нужно как минимум учесть инфляцию, которая набежала с 2008 года.
 
-This is a horizontal separator:
+Тем не менее для себя я сделал такие выводы — чтобы увеличить удовлетворенность от жизни и сделать ее более «счастливой» (оставляя за скобками что такое счастье для каждого конкретного человека), нужно стремиться зарабатывать от $50 000 в год, или 330 тысяч рублей в месяц. Все, что выше этой суммы, почти никак не влияет на ощущение счастья и другие эмоциональные составляющие удовлетворенность от жизни с НЕ кратным увеличением дохода вообще не растет.
 
----
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero esse non molestias eos excepturi, inventore atque cupiditate. Sed voluptatem quas omnis culpa, et odit.
-
----
-
-## List types
-
-### Ordered list
-
-1. List item 1
-2. List item 2
-   1. Nested list item A
-   2. Nested list item B
-3. List item 3
-
-### Unordered list
-
-- List item
-- List item
-  - Nested list item
-  - Nested list item
-    - Double nested list item
-    - Double nested list item
-- List item
-
-### Mixed list
-
-1. First ordered list item
-2. Another item
-   - Unordered sub-list.
-3. Actual numbers don't matter, just that it's a number
-   1. Ordered sub-list
-4. And another item.
-
-## Links
-
-[Inline-style link](https://www.google.com)
-
-[Inline-style link with title](https://www.google.com "Google's Homepage")
-
-[Reference-style link][arbitrary case-insensitive reference text]
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself].
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
-
-## Images
-
-Images included in _\_posts_ folder are lazy loaded.
-
-Inline-style:
-![alt text](/src/images/random.jpeg "Logo Title Text 1")
-
-## Table
-
-| Tables        |      Are      | Cool |
-| ------------- | :-----------: | ---: |
-| col 3 is      | right-aligned | 1600 |
-| col 2 is      |   centered    |   12 |
-| zebra stripes |   are neat    |    1 |
-
-| Markdown | Less      | Pretty     |
-| -------- | --------- | ---------- |
-| _Still_  | `renders` | **nicely** |
-| 1        | 2         | 3          |
-
-## Syntax highlight
-
-```ts title="astro.config.mjs" showLineNumbers {1-2,5-6}
-import { defineConfig } from "astro/config";
-import vercelStatic from "@astrojs/vercel/static";
-
-export default defineConfig({
-  output: "static",
-  adapter: vercelStatic({
-    webAnalytics: {
-      enabled: true,
-    },
-  }),
-});
-```
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero esse non molestias eos excepturi, inventore atque cupiditate. Sed voluptatem quas omnis culpa, et odit.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero esse non molestias eos excepturi, inventore atque cupiditate. Sed voluptatem quas omnis culpa, et odit.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero esse non molestias eos excepturi, inventore atque cupiditate. Sed voluptatem quas omnis culpa, et odit.
-
-```python showLineNumbers
-s = "Python syntax highlighting"
-print s
-```
+И в одном предложении. Если вы стабильно зарабатываете в районе 300 тысяч рублей в месяц и упарываетесь по поводу того, как заработать еще больше — дополнительные деньги большого счастья вам скорее всего не принесут. Лучше начать искать его в чем-то другом.
