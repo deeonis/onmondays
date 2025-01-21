@@ -15,7 +15,7 @@ export function remarkReadingTime() {
 		} else if (minutes >= 2 && minutes <= 4) {
 			localizedText = `читать ${minutes} минуты`;
 		} else {
-			localizedText = читать `${minutes} минут`;
+			localizedText = `читать ${minutes} минут`;
 		}
 
 		data.astro.frontmatter.minutesRead = localizedText;
