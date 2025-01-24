@@ -64,39 +64,15 @@ const currentPath = Astro.url.pathname;
 </Section>
 
 <script>
-<<<<<<< HEAD
-  const lightSwitches = document.querySelectorAll('.light-switch');
-  if (lightSwitches.length > 0) {
-    lightSwitches.forEach((lightSwitch, i) => {
-      if (localStorage.getItem('dark-mode') === 'true') {
-        lightSwitch.checked = true;
-      }
-      lightSwitch.addEventListener('click', () => {
-        const checked = lightSwitch.checked;
-        lightSwitches.forEach((el, n) => {
-          if (n !== i) el.checked = checked;
-        });
-        if (checked) {
-          document.documentElement.classList.add('dark');
-          localStorage.setItem('dark-mode', 'true');
-        } else {
-          document.documentElement.classList.remove('dark');
-          localStorage.setItem('dark-mode', 'false');
-        }
-      });
-    });
-  }
-</script>
-=======
 	const lightSwitches = document.querySelectorAll<HTMLInputElement>('.light-switch');
 	if (lightSwitches.length > 0) {
-	  lightSwitches.forEach((lightSwitch, i) => {
+	  lightSwitches.forEach((lightSwitch: HTMLInputElement, i: number) => {
 		if (localStorage.getItem('dark-mode') === 'true') {
 		  lightSwitch.checked = true;
 		}
 		lightSwitch.addEventListener('click', () => {
 		  const checked = lightSwitch.checked;
-		  lightSwitches.forEach((el, n) => {
+		  lightSwitches.forEach((el: HTMLInputElement, n: number) => {
 			if (n !== i) (el as HTMLInputElement).checked = checked;
 		  });
 		  if (checked) {
@@ -110,4 +86,3 @@ const currentPath = Astro.url.pathname;
 	  });
 	}
   </script>
->>>>>>> a671029 (fixed steakthrough)
