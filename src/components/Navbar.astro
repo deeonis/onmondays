@@ -66,24 +66,27 @@ const currentPath = Astro.url.pathname;
 </Section>
 
 <script>
-	const lightSwitch = document.querySelector('.light-switch');
-
-	if (lightSwitch) {
-		// При загрузке страницы проверяем состояние темы
+	const lightSwitches = document.querySelectorAll<HTMLInputElement>('.light-switch');
+	if (lightSwitches.length > 0) {
+	  lightSwitches.forEach((lightSwitch, i) => {
 		if (localStorage.getItem('dark-mode') === 'true') {
-			document.documentElement.classList.add('dark');
-			lightSwitch.checked = true;
+		  lightSwitch.checked = true; // TypeScript теперь знает, что lightSwitch имеет свойство checked
 		}
-
-		// Обработчик для переключения темы
 		lightSwitch.addEventListener('click', () => {
-			if (lightSwitch.checked) {
-				document.documentElement.classList.add('dark');
-				localStorage.setItem('dark-mode', 'true');
-			} else {
-				document.documentElement.classList.remove('dark');
-				localStorage.setItem('dark-mode', 'false');
+		  const { checked } = lightSwitch;
+		  lightSwitches.forEach((el, n) => {
+			if (n !== i) {
+			  el.checked = checked;
 			}
+		  });
+		  if (checked) {
+			document.documentElement.classList.add('dark');
+			localStorage.setItem('dark-mode', 'true');
+		  } else {
+			document.documentElement.classList.remove('dark');
+			localStorage.setItem('dark-mode', 'false');
+		  }
 		});
+	  });
 	}
-</script>
+  </script>
