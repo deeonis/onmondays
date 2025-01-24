@@ -1,21 +1,40 @@
 ---
 import Section from './Section.astro';
+
+// Получаем текущий путь страницы
+const currentPath = Astro.url.pathname;
 ---
 
 <Section>
 	<div class="flex justify-between">
 		<div class="text-3xl font-bold">
-			<a href="/"
-				<span class="pr-2 text-2xl text-gray-500">{'Denis Kuznetsov'}</span><span
-					class="text-orange-600"></span
-				><span class="pl-2 text-2xl text-gray-500">{''}</span></a
-			>
+			<a href="/">
+				<span class="pr-2 text-2xl text-gray-500">{'Denis Kuznetsov'}</span>
+			</a>
 		</div>
 		<div class="flex items-center">
 			<nav>
 				<ul class="hidden flex-row sm:flex">
-					<li><a href="/tags" class="mr-3 hover:text-orange-600">Темы</a></li>
-					<li><a href="/posts" class="hover:text-orange-600">Блог</a></li>
+					<li>
+						<a 
+							href="/tags" 
+							class={`mr-3 hover:text-orange-600 ${
+								currentPath === '/tags' ? 'underline' : ''
+							}`}
+						>
+							Темы
+						</a>
+					</li>
+					<li>
+						<a 
+							href="/posts" 
+							class={`hover:text-orange-600 ${
+								currentPath === '/posts' ? 'underline' : ''
+							}`}
+						>
+							Блог
+						</a>
+					</li>
 				</ul>
 			</nav>
 			<div class="ml-3 flex flex-col justify-center">
@@ -47,27 +66,27 @@ import Section from './Section.astro';
 </Section>
 
 <script>
-	const lightSwitches = document.querySelectorAll('.light-switch');
+	const lightSwitches = document.querySelectorAll<HTMLInputElement>('.light-switch');
 	if (lightSwitches.length > 0) {
-		lightSwitches.forEach((lightSwitch: any, i) => {
-			if (localStorage.getItem('dark-mode') === 'true') {
-				lightSwitch.checked = true;
+	  lightSwitches.forEach((lightSwitch, i) => {
+		if (localStorage.getItem('dark-mode') === 'true') {
+		  lightSwitch.checked = true; // TypeScript теперь знает, что lightSwitch имеет свойство checked
+		}
+		lightSwitch.addEventListener('click', () => {
+		  const { checked } = lightSwitch;
+		  lightSwitches.forEach((el, n) => {
+			if (n !== i) {
+			  el.checked = checked;
 			}
-			lightSwitch.addEventListener('click', () => {
-				const { checked } = lightSwitch;
-				lightSwitches.forEach((el: any, n) => {
-					if (n !== i) {
-						el.checked = checked;
-					}
-				});
-				if (lightSwitch.checked) {
-					document.documentElement.classList.add('dark');
-					localStorage.setItem('dark-mode', 'true');
-				} else {
-					document.documentElement.classList.remove('dark');
-					localStorage.setItem('dark-mode', 'false');
-				}
-			});
+		  });
+		  if (checked) {
+			document.documentElement.classList.add('dark');
+			localStorage.setItem('dark-mode', 'true');
+		  } else {
+			document.documentElement.classList.remove('dark');
+			localStorage.setItem('dark-mode', 'false');
+		  }
 		});
+	  });
 	}
-</script>
+  </script>
