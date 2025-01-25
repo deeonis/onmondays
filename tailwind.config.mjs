@@ -15,10 +15,8 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 	  screens: {
-		// Переопределяем `sm` на 500px
-		sm: '300px',
-		// Оставшиеся брейкпоинты можно копировать из "tailwindcss/defaultTheme"
-		// или использовать свои
+		xs: '430px', // Новый брейкпоинт для меню
+		sm: '640px', // Оставляем дефолтный sm для остальных элементов
 		md: '768px',
 		lg: '1024px',
 		xl: '1280px',
@@ -37,10 +35,6 @@ export default {
 			  'pre code': false,
 			},
 		  },
-		  sm: { css: { /* ... */ } },
-		  lg: { css: { /* ... */ } },
-		  xl: { css: { /* ... */ } },
-		  '2xl': { css: { /* ... */ } },
 		},
 	  },
 	},
