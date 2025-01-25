@@ -14,15 +14,35 @@ export default {
 	darkMode: 'class',
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {
-			typography: {
-				DEFAULT: { css: disabledCss },
-				sm: { css: disabledCss },
-				lg: { css: disabledCss },
-				xl: { css: disabledCss },
-				'2xl': { css: disabledCss }
-			}
-		}
+	  screens: {
+		// Переопределяем `sm` на 500px
+		sm: '300px',
+		// Оставшиеся брейкпоинты можно копировать из "tailwindcss/defaultTheme"
+		// или использовать свои
+		md: '768px',
+		lg: '1024px',
+		xl: '1280px',
+		'2xl': '1536px',
+	  },
+	  extend: {
+		typography: {
+		  DEFAULT: {
+			css: {
+			  'code::before': false,
+			  'code::after': false,
+			  'blockquote p:first-of-type::before': false,
+			  'blockquote p:last-of-type::after': false,
+			  pre: false,
+			  code: false,
+			  'pre code': false,
+			},
+		  },
+		  sm: { css: { /* ... */ } },
+		  lg: { css: { /* ... */ } },
+		  xl: { css: { /* ... */ } },
+		  '2xl': { css: { /* ... */ } },
+		},
+	  },
 	},
-	plugins: [require('@tailwindcss/typography')]
-};
+	plugins: [require('@tailwindcss/typography')],
+  };
